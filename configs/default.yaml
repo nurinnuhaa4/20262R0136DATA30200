@@ -1,0 +1,74 @@
+# =====================================
+# HOI Reconstruction Configuration
+# =====================================
+
+project:
+  name: "HOI Reconstruction"
+  num_videos: 6
+  difficulty_levels:
+    - easy
+    - normal
+    - hard
+
+# =====================================
+# Video Preprocessing
+# =====================================
+
+video:
+  original_fps: 30
+  processing_fps: 15
+  interpolate_to_original_fps: true
+
+  crop_hand_object_regions: true
+  preserve_original_coordinates: true
+
+# =====================================
+# Coordinate System
+# =====================================
+
+geometry:
+  coordinate_convention: "OpenCV"
+  metric_scale_required: true
+  camera_fixed: true
+
+# =====================================
+# Reconstruction Models
+# =====================================
+
+models:
+  segmentation: "SAM3"
+  depth_estimation: "MoGe-3"
+  hand_reconstruction: "HaPTIC"
+  object_reconstruction: "SAM3D"
+  object_pose_estimation: "FoundationPose"
+
+# =====================================
+# Optimization
+# =====================================
+
+optimization:
+  enabled: true
+
+  losses:
+    visual_similarity: true
+    hand_object_penetration: true
+    temporal_smoothness: true
+
+  # To be determined after initial experiments
+  iterations: null
+
+  weights:
+    visual: null
+    penetration: null
+    temporal: null
+
+# =====================================
+# Output
+# =====================================
+
+output:
+  fps: 30
+  save_json: true
+  save_glb: true
+  render_front_view: true
+  render_side_view: true
