@@ -1,0 +1,70 @@
+
+# ==============================
+# Python
+# ==============================
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# ==============================
+# Jupyter Notebook
+# ==============================
+.ipynb_checkpoints/
+
+# ==============================
+# Virtual Environments
+# ==============================
+venv/
+env/
+.venv/
+
+# ==============================
+# Environment Variables / Secrets
+# ==============================
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ==============================
+# Model Checkpoints
+# ==============================
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+checkpoints/
+weights/
+
+# ==============================
+# Datasets and Videos
+# ==============================
+data/
+datasets/
+videos/
+*.mp4
+*.mov
+*.avi
+
+# ==============================
+# Temporary Files
+# ==============================
+temp/
+tmp/
+cache/
+*.log
+
+# ==============================
+# Generated Outputs
+# ==============================
+outputs/
+results/
+
+# ==============================
+# Operating System
+# ==============================
+.DS_Store
+Thumbs.db
