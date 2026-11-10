@@ -1,0 +1,11 @@
+numpy
+opencv-python
+matplotlib
+pillow
+scipy
+pandas
+tqdm
+pyyaml
+trimesh
+imageio
+imageio-ffmpeg
