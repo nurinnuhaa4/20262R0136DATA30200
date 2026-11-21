@@ -2,6 +2,18 @@
 
 This document records the experiments, observations, problems and improvements made during the HOI reconstruction project.
 
+## Video Dataset Inspection and Extraction
+
+Status: Completed
+
+- Number of videos: 6
+- Original FPS: 30
+- Resolution: 640 x 480
+- Total extracted frames: 2,316
+- Frame format: JPEG
+- Naming format: 000000.jpg, 000001.jpg, ...
+- All extracted frame counts match the official specifications.
+
 ## Experiment 1: Video Preprocessing
 
 **Status:** Not started
