@@ -16,15 +16,32 @@ Status: Completed
 
 ## Experiment 1: Video Preprocessing
 
-**Status:** Not started
+**Status:** Completed
 
-- Original FPS: 30
-- Processing FPS: 15
-- Cropping: Hand and object regions
-- Interpolation target: 30 FPS
+### Dataset
+- Number of videos: 6
+- Original resolution: 640 × 480
+- Original frame rate: 30 FPS
+- Total original frames: 2,316
 
-Observations:
-- To be updated.
+### Frame Sampling
+- Processing frame rate: 15 FPS
+- Sampling strategy: Keep every second frame (indices 0, 2, 4, ...)
+- Total processed frames: 1,161
+
+### Metadata
+For each processed frame, we saved:
+- Processed frame filename
+- Original frame index
+- Original video timestamp
+- Original FPS
+- Processing FPS
+
+### Validation
+- All six videos were successfully processed.
+- Processed frame counts matched expectations.
+- Original 30 FPS frames were preserved separately.
+- Frame-to-timestamp correspondence was recorded in CSV files.
 
 ## Experiment 2: SAM3 Segmentation
 
